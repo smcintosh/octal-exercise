@@ -10,9 +10,9 @@ public class ObserverTest {
 	public void testOneDigit() {
 		Subject sub = new NumberSubject(0);
 		Observer obs = new OctObserver(sub);
-
+		
 		sub.setState(5);
-		assertEquals(obs.getValue(), "5");
+		assertEquals("5", obs.getValue());
 	}
 
 	@Test

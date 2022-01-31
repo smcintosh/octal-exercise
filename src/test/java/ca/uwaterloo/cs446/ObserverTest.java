@@ -9,7 +9,7 @@ public class ObserverTest {
 	@Test
 	public void testOneDigit() {
 		Subject sub = new NumberSubject(0);
-		Observer obs = new OctObserver(sub);
+		Observer obs = new OctalObserver(sub);
 
 		sub.setState(5);
 		assertEquals(obs.getValue(), "5");
@@ -19,7 +19,7 @@ public class ObserverTest {
 	public void testTwoDigit() {
 
 		Subject sub = new NumberSubject(0);
-		Observer obs = new OctObserver(sub);
+		Observer obs = new OctalObserver(sub);
 
 		sub.setState(14);
 		assertEquals(obs.getValue(), "16");
